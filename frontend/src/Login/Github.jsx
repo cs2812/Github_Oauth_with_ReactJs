@@ -23,7 +23,12 @@ const Github = ({ setLogin }) => {
 
       fetch(`${proxy_url}/${requestData.code}`, {
         method: "POST",
-        body: requestData,
+        // mode: "no-cors",
+        // headers: {
+        //   "Content-Type": "application/json",
+        //   // 'Content-Type': 'application/x-www-form-urlencoded',
+        // },
+        // body: requestData,
       })
         .then((response) => response.json())
         .then((data) => {

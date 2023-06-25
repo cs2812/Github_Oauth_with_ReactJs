@@ -11,7 +11,7 @@ const Login = ({setLogin}) => {
         <Github setLogin={setLogin}/>
       </div>
       <div>
-        <Google/>
+        <Google setLogin={setLogin}/>
       </div>
     </div>
   );

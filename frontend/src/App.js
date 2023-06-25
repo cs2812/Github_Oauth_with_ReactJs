@@ -7,8 +7,13 @@ import { useState } from "react";
 function App() {
   const [login, setLogin] = useState({
     status: false,
-    data: {},
+    name: "",
+    image: "",
+    Oauth: "",
   });
+  // useEffect(() => {
+  //   console.log("login",login);
+  // }, [login]);
   return (
     <div>
       <Routes>
